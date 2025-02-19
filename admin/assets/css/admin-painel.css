@@ -1,0 +1,68 @@
+/* Estilos para o Painel Administrativo */
+.admin-panel {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.admin-panel h1 {
+    font-size: 2rem;
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.admin-panel p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos links dentro do painel */
+.admin-panel ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.admin-panel ul li {
+    margin: 15px 0; /* Maior espaçamento entre os botões */
+}
+
+/* Estilo dos botões */
+.admin-panel ul li a {
+    text-decoration: none;
+    color: #333;
+    background-color: #f5f5f5;
+    padding: 15px 20px; /* Maior padding para botões mais espaçados */
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.admin-panel ul li a:hover {
+    background-color: #333;
+    color: white;
+    transform: scale(1.05); /* Efeito de aumento no hover */
+}
+
+/* Ajuste de tamanho e alinhamento dos botões */
+.admin-panel ul li a {
+    width: 250px; /* Definindo uma largura fixa para os botões */
+    margin-left: auto; /* Alinhando ao centro */
+    margin-right: auto;
+}
+
+/* Para responsividade, os botões se ajustam */
+@media (max-width: 600px) {
+    .admin-panel ul li a {
+        width: 100%; /* Faz os botões ocuparem toda a largura disponível em telas menores */
+        padding: 12px 0; /* Ajuste do padding para telas pequenas */
+    }
+}

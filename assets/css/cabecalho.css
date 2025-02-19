@@ -1,0 +1,30 @@
+/* Modifique o estilo do Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1000;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 70px; /* Aumentando o tamanho do logo */
+    height: auto;
+    margin-right: 10px;
+}
+
+header .site-title {
+    font-size: 1.8rem;
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    margin: 0;
+    color: white; /* Título do site em branco */
+    text-align: center;
+}

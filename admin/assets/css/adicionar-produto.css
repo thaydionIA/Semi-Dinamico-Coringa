@@ -1,0 +1,104 @@
+/* Estilo para o adicionar produto */
+.adicionar-produto {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+.adicionar-produto h1 {
+    font-size: 2rem;
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+.adicionar-produto form {
+    display: flex;
+    flex-direction: column;
+}
+
+.adicionar-produto label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.adicionar-produto input, .adicionar-produto select {
+    padding: 8px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Estilo para a imagem com bordas arredondadas */
+.adicionar-produto .imagem-atual {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.adicionar-produto .imagem-atual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilo da pré-visualização da imagem */
+.adicionar-produto .image-preview {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 8px; /* Bordas arredondadas */
+    margin-bottom: 20px;
+}
+
+.adicionar-produto .image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilo do botão de remoção da imagem */
+.adicionar-produto .remove-image {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 1.5rem;
+    color: #333;
+    background-color: transparent;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.adicionar-produto .remove-image:hover {
+    color: #f44336; /* Cor do "X" ao passar o mouse */
+}
+
+/* Estilo do botão de "Adicionar Produto" */
+.adicionar-produto button[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.adicionar-produto button[type="submit"]:hover {
+    background-color: #f5a623;
+}
+
+

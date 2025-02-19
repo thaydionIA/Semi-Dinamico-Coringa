@@ -1,0 +1,119 @@
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: calc(22% - 15px);
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-item.esgotado {
+    position: relative;
+    opacity: 1; /* Manter a opacidade total */
+}
+
+.product-item.esgotado:hover {
+    transform: scale(1.05); /* Ativar o efeito hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+}
+
+.product-item.esgotado::before {
+    content: "Esgotado";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.product-item img {
+    width: 95%; /* Reduzi o tamanho da imagem */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-item h2 {
+    font-size: 1.6rem; /* Mantendo o tamanho do título */
+    font-weight: bold;
+    font-family: 'Bebas Neue', Arial, sans-serif; /* Fonte Bebas Neue */
+    color: black; /* Cor preta */
+    margin: 10px 0 5px;
+}
+
+.product-item p {
+    font-size: 1.10rem; /* Tamanho da descrição */
+    margin: 20px 0 15px;
+    color: black;
+}
+
+.btn-detalhes {
+    display: inline-block;
+    padding: 12px 25px; /* Mantendo o tamanho reduzido do botão */
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Arial, sans-serif; /* Fonte padrão para o botão */
+    margin: 10px 0 15px;
+}
+
+.btn-detalhes:hover {
+    background-color: #555;
+}
+
+.btn-detalhes[style*="pointer-events: none"] {
+    background-color: #ccc;
+    color: #999;
+    cursor: not-allowed;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .product-item { width: calc(32% - 20px); } /* Ajuste para três produtos por linha */
+}
+
+@media (max-width: 800px) {
+    .product-item { width: calc(48% - 20px); } /* Ajuste para dois produtos por linha */
+}
+
+@media (max-width: 600px) {
+    .product-item { width: calc(98% - 20px); } /* Um produto por linha no mobile */
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.3rem; /* Mantendo o tamanho do título */
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', Arial, sans-serif; /* Fonte Bebas Neue */
+    color: black; /* Cor preta */
+}
+
+.products-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}

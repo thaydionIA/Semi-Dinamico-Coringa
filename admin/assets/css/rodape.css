@@ -1,0 +1,44 @@
+
+/* Estilo do Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Texto do rodapé */
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Estilo dos ícones sociais no rodapé */
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 1em;
+}
+
+/* Estilo para os links dos ícones */
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+/* Estilo para os ícones dentro dos links */
+.social-icons i {
+    color: white;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+/* Efeito de hover nos ícones sociais */
+.social-icons a:hover i {
+    color: #f9f9f9; /* Mudança de cor ao passar o mouse */
+}

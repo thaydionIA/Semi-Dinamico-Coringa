@@ -1,0 +1,49 @@
+   /* Estilo para a seção de filtro */
+.filter-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.filter-section form {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-section label {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.filter-section select {
+    padding: 8px 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Estilo do botão com ícone de lupa no filtro */
+.filter-section button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 40px; /* Ajuste o tamanho do botão para ser quadrado */
+    height: 40px;
+}
+
+.filter-section button i {
+    font-size: 1rem; /* Tamanho do ícone */
+}
+
+.filter-section button:hover {
+    background-color: #f5a623; /* Cor ao passar o mouse */
+}
+

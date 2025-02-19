@@ -1,0 +1,78 @@
+
+
+/* Container principal do login */
+.login-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    justify-content: center;
+    margin: 60px auto;  /* Adicionando margem em cima e em baixo */
+    flex-grow: 10; /* Para preencher o espaço restante */
+    
+}
+
+/* Título do formulário */
+.login-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Campos de input */
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Estilo do botão */
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #f5a623;
+}
+
+/* Estilo da mensagem de erro */
+.error-message {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 20px;
+        width: 80%;
+    }
+
+    .login-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .login-form input {
+        font-size: 1rem;
+    }
+
+    .login-form button {
+        font-size: 1rem;
+    }
+}
